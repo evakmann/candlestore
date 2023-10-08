@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Lato:wght@300&family=News+Cycle&display=swap');
+
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 2;
+}
+
+.intro-image {
+    height: 95vh;
+    background-image: linear-gradient(to bottom right, rgba(198, 198, 198, 0.409), rgba(103, 103, 103, 0.363)) , 
+    url('../images/pilt1.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.intro-text {
+    display: block;
+    font: 5rem;
+    letter-spacing: 0.5rem;
+    animation-name: moveInLeft;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+}
+
+.text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+}
+
+.text-box h1 {
+    text-transform: uppercase;
+    color: rgb(144, 75, 86);
+    text-shadow: 0 0 3px rgb(255, 244, 246);
+}
+
+.heading-main {
+    display: block;
+    font-size: 5rem;
+    letter-spacing: 1.1rem;
+    animation-name: moveInLeft;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes moveInLeft {
+    0% {
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+
+    80% {
+        transform: translateX(50px);
+    }
+    
+     100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+}
+
+.heading-sub {
+    display: block;
+    font-size: 1.6rem;
+    letter-spacing: 1.3rem;
+    animation-name: moveInRight;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out; 
+}
+
+@keyframes moveInRight {
+    0% {
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+
+    80% {
+        transform: translateX(-50px);
+    }
+    
+     100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+}
+
+.btn {
+    border-bottom: 0.2rem solid pink;
+    color: white;
+    display: inline-block;
+    font-size: 3rem;
+    padding: 1rem;
+    margin-top: 5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background-color: rgb(130, 97, 103);
+    box-shadow: 0 1rem 2rem pink(0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+.btn:active {
+    box-shadow: 0 0.5rem 1rem pink(0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+.main {
+    background-color: rgb(190, 143, 151);
+    height: 1300px;
+    margin-top: -5rem;
+    text-align: center;
+    padding-top: 5rem;
+    text-transform: uppercase;
+    clip-path: circle(50% at 50% 50%);
+}
+
+.main h1 {
+    font-size: 3rem;
+    text-shadow: 0 0 3px rgb(255, 244, 246);
+    text-transform: uppercase;
+    color: rgb(144, 75, 86);
+}
+
+.gallery {
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    width: 75%;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin: 1rem;
+    color: pink;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: pink;
+}
+
+.footer ul li:hover, .footer ul li a:hover {
+    color: gray;
+    transform: scale(1.3);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'News Cycle', sans-serif;
+    text-align: center;
+}
+
+.intro-image__link a:hover {
+    transform: scale(1.2);
+}
+
+.intro-text {
+    background-color: #625f53cb;
+    color: rgb(252, 252, 234);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    padding: 0 15rem;
+}
+
+.origin-image {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+
+.origin-text__textbox h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+
+
+.origin-text__textbox h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.intro-text__textbox h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.quality-image {
+    background-attachment: fixed;
+    background-image: url(../images/pilt3.jpg);
+    background-size: cover;
+    background-position: bottom;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quality-image__link a {
+    background-color: #a896a178;
+    border: 2px solid #a896a17f;
+    color: rgb(252, 252, 234);
+    display: inline-block;
+    font-family: 'La Belle Aurore', cursive;;
+    font-size: 2rem;
+    padding: 2rem;
+    text-decoration: none;
+    transform: all 1s ease-in-out; 
+}
+.packaging-image {
+    background-color: #625f53cb;
+    color: rgb(252, 252, 234);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    padding: 0 15rem;
+}
+.packaging-text {
+    background-color: #625f53cb;
+    color: rgb(252, 252, 234);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    padding: 0 15rem;
+}
+.tutorials-image {
+    background-color: #625f53cb;
+    color: rgb(252, 252, 234);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    padding: 0 15rem;
+}
+.footer {
+    height: 250px;
+    background-color: #6f5c4c;
+    color: rgba(252, 252, 234, 0.748);
+    font-size: 1.5rem;
+    padding-top: 2rem;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin: 1rem;
+    text-decoration: none;
+}
+
+.footer ul li a {
+    color: rgba(252, 252, 234, 0.748);
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    color: rgb(255, 255, 255);
+    transform: scale(1.5);
+    text-decoration: none;
+}
